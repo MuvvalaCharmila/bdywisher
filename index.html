@@ -1,18 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>Birthday Wishes</title>
+  <title>Birthday Wish</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="container">
-    <h2>Enter Name & Date of Birth</h2>
-    <input type="text" id="name" placeholder="Enter Name" />
-    <input type="date" id="dob" />
-    <button onclick="checkBirthday()">Wish Now</button>
-    <h3 id="output"></h3>
+    <h1>🎂 Send Birthday Wishes 🎉</h1>
+
+    <input type="text" id="nameInput" placeholder="Enter Name"><br><br>
+    <input type="date" id="dobInput"><br><br>
+
+    <button onclick="showWish()">Wish Now</button>
+
+    <h2 id="wishMessage"></h2>
+    <img id="bdayPic" src="CHH.jpg" alt="Birthday Pic" style="display: none; width: 250px; border-radius: 20px; margin-top: 15px;">
   </div>
+
   <script src="script.js"></script>
 </body>
 </html>
