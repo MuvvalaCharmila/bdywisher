@@ -33,3 +33,10 @@ button {
 button:hover {
   background-color: darkorange;
 }
+body {
+    background-image: url('CHH.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+}
