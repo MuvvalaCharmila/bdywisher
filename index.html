@@ -21,6 +21,24 @@
     <img id="bdayPic" src="CHH.jpg" alt="Birthday Pic" style="display: none; width: 250px; border-radius: 20px; margin-top: 15px;">
   </div>
 
-  <script src="script.js"></script>
+  <script>
+  const audio = new Audio('bdy.mp3');
+  function showWish() {
+    const name = document.getElementById("nameInput").value;
+    const dob = document.getElementById("dobInput").value;
+
+    if (!name || !dob) {
+      document.getElementById("wishMessage").innerText = "Please enter both name and date of birth.";
+      return;
+    }
+
+    document.getElementById("wishMessage").innerHTML =
+      🎉 Happy Birthday ${name}! 🎂 Wishing you a joyful and blessed year ahead!;
+
+    document.getElementById("bdayPic").style.display = "block";
+
+    audio.play(); 
+  }
+</script>
 </body>
 </html>
